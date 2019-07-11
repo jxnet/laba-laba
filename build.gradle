@@ -1,0 +1,36 @@
+
+buildscript {
+
+    repositories {
+        jcenter()
+    }
+
+}
+
+plugins {
+    id 'java'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+}
+
+allprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+
+    group 'laba-laba'
+    version '0.0.1'
+
+    sourceCompatibility = 13
+
+    repositories {
+        jcenter()
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom("com.ardikars.common:common:1.3.3.RELEASE")
+            mavenBom("com.ardikars.jxpacket:jxpacket:1.2.6.RELEASE")
+        }
+    }
+
+}

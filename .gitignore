@@ -1,3 +1,23 @@
+
+build
+out
+
+client/build
+client/out
+client/.idea
+
+server/build
+server/out
+server/.idea
+
+shared/build
+shared/out
+shared/.idea
+
+# Intellij IDEA
+*.iml
+.idea
+
 # Compiled class file
 *.class
 
