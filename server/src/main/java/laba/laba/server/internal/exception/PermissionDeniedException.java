@@ -14,18 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * Pcap generic warning (1).
+ * -8
  *
- * @apiNote Generic pcap warning
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class PcapWarningException extends RuntimeException {
+public class PermissionDeniedException extends Exception {
 
-    public PcapWarningException(String message) {
+    public PermissionDeniedException(String message) {
         super(message);
     }
 

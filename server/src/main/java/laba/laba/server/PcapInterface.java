@@ -18,16 +18,16 @@ package laba.laba.server;
 
 import com.ardikars.common.logging.Logger;
 import com.ardikars.common.logging.LoggerFactory;
-import laba.laba.server.exception.ActivatedException;
-import laba.laba.server.exception.CanSetTStampTypeException;
-import laba.laba.server.exception.InterfaceNotUpException;
-import laba.laba.server.exception.NoSuchDeviceException;
-import laba.laba.server.exception.PcapErrorException;
-import laba.laba.server.exception.PermissionDeniedException;
-import laba.laba.server.exception.PromiscNotSupported;
-import laba.laba.server.exception.PromiscPermissionDeniedException;
-import laba.laba.server.exception.RfmonNotSupportedException;
-import laba.laba.server.exception.TStampPrecisionNotSupportedException;
+import laba.laba.server.internal.exception.ActivatedException;
+import laba.laba.server.internal.exception.CanSetTStampTypeException;
+import laba.laba.server.internal.exception.InterfaceNotUpException;
+import laba.laba.server.internal.exception.NoSuchDeviceException;
+import laba.laba.server.internal.exception.PcapErrorException;
+import laba.laba.server.internal.exception.PermissionDeniedException;
+import laba.laba.server.internal.exception.PromiscNotSupported;
+import laba.laba.server.internal.exception.PromiscPermissionDeniedException;
+import laba.laba.server.internal.exception.RfmonNotSupportedException;
+import laba.laba.server.internal.exception.TStampPrecisionNotSupportedException;
 import laba.laba.server.internal.PcapInterfaceIterator;
 import laba.laba.server.internal.foreign.pcap_mapping;
 

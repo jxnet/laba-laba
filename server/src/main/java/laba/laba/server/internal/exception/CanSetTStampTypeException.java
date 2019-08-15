@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * -6
+ * -10
  *
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class RfmonNotSupportedException extends Exception {
+public class CanSetTStampTypeException extends Exception {
 
-    public RfmonNotSupportedException(String message) {
+    public CanSetTStampTypeException(String message) {
         super(message);
     }
 

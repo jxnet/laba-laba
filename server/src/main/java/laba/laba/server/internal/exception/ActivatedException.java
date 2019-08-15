@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * -11
+ * -4
  *
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class PromiscPermissionDeniedException extends Exception {
+public class ActivatedException extends Exception{
 
-    public PromiscPermissionDeniedException(String message) {
+    public ActivatedException(String message) {
         super(message);
     }
 

@@ -6,8 +6,8 @@ import com.ardikars.common.memory.Memories;
 import com.ardikars.common.memory.Memory;
 import com.ardikars.jxpacket.common.UnknownPacket;
 import com.ardikars.jxpacket.core.ethernet.Ethernet;
-import laba.laba.server.exception.BreakException;
-import laba.laba.server.exception.PcapErrorException;
+import laba.laba.server.internal.exception.BreakException;
+import laba.laba.server.internal.exception.PcapErrorException;
 import laba.laba.server.internal.foreign.bpf_mapping;
 import laba.laba.server.internal.foreign.pcap_mapping;
 

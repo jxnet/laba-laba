@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * 2
+ * Loop terminated by pcap_breakloop (-2)
  *
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class PromiscNotSupported extends RuntimeException {
+public class BreakException extends Exception {
 
-    public PromiscNotSupported(String message) {
+    public BreakException(String message) {
         super(message);
     }
 

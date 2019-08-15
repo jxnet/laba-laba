@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * -5
+ * 2
  *
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class NoSuchDeviceException extends Exception {
+public class PromiscNotSupported extends RuntimeException {
 
-    public NoSuchDeviceException(String message) {
+    public PromiscNotSupported(String message) {
         super(message);
     }
 

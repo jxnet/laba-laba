@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * -3
+ * -9
  *
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class NotActivatedException extends Exception {
+public class InterfaceNotUpException extends Exception {
 
-    public NotActivatedException(String message) {
+    public InterfaceNotUpException(String message) {
         super(message);
     }
 

@@ -14,17 +14,18 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * 3
+ * Pcap generic warning (1).
  *
+ * @apiNote Generic pcap warning
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class TStampTypeNotSupportedException extends RuntimeException {
+public class PcapWarningException extends RuntimeException {
 
-    public TStampTypeNotSupportedException(String message) {
+    public PcapWarningException(String message) {
         super(message);
     }
 

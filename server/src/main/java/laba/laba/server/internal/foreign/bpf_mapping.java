@@ -43,7 +43,7 @@ public interface bpf_mapping {
     int bpf_filter_with_aux_data(Pointer<bpf_mapping.bpf_insn> insn_p, Pointer<Byte> p, int var1, int var2, Pointer<bpf_mapping.bpf_aux_data> aux_data_p);
 
     @NativeStruct("[u32(bf_len)x32u64(bf_insns):${bpf_insn}](bpf_program)")
-    public interface bpf_program extends Struct<bpf_program> {
+    interface bpf_program extends Struct<bpf_program> {
 
         @NativeGetter("bf_len")
         int bf_len$get();
@@ -54,7 +54,7 @@ public interface bpf_mapping {
     }
 
     @NativeStruct("[u16(code)u8(jt)u8(jf)u32(k)](bpf_insn)")
-    public interface bpf_insn extends Struct<bpf_mapping.bpf_insn> {
+    interface bpf_insn extends Struct<bpf_mapping.bpf_insn> {
 
         @NativeGetter("code")
         short code$get();
@@ -71,7 +71,7 @@ public interface bpf_mapping {
     }
 
     @NativeStruct("[u16(vlan_tag_present)u16(vlan_tag)](bpf_aux_data)")
-    public interface bpf_aux_data extends Struct<bpf_mapping.bpf_aux_data> {
+    interface bpf_aux_data extends Struct<bpf_mapping.bpf_aux_data> {
 
         @NativeGetter("vlan_tag_present")
         short vlan_tag_present$get();

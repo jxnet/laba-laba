@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * -12
+ * -6
  *
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class TStampPrecisionNotSupportedException extends Exception {
+public class RfmonNotSupportedException extends Exception {
 
-    public TStampPrecisionNotSupportedException(String message) {
+    public RfmonNotSupportedException(String message) {
         super(message);
     }
 

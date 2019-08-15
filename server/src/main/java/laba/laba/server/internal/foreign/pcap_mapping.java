@@ -258,17 +258,17 @@ public interface pcap_mapping {
 
 
     @NativeStruct("${pcap}")
-    public interface pcap extends Struct<pcap> {
+    interface pcap extends Struct<pcap> {
 
     }
 
     @NativeStruct("${pcap_dumper}")
-    public interface pcap_dumper extends Struct<pcap_dumper> {
+    interface pcap_dumper extends Struct<pcap_dumper> {
 
     }
 
     @NativeStruct("[u64(next):${pcap_if}u64(name):u8u64(description):u8u64(addresses):${pcap_addr}u32(flags)x32](pcap_if)")
-    public interface pcap_if extends Struct<pcap_if> {
+    interface pcap_if extends Struct<pcap_if> {
 
         @NativeGetter("next")
         Pointer<pcap_if> next$get();
@@ -288,7 +288,7 @@ public interface pcap_mapping {
     }
 
     @NativeStruct("[u8(sa_len)u8(sa_family)[18u8](sa_data)](sockaddr)")
-    public interface sockaddr extends Struct<sockaddr> {
+    interface sockaddr extends Struct<sockaddr> {
 
         @NativeGetter("sa_len")
         byte sa_len$get();
@@ -302,7 +302,7 @@ public interface pcap_mapping {
     }
 
     @NativeStruct("[u64(next):${pcap_addr}u64(addr):${sockaddr}u64(netmask):${sockaddr}u64(broadaddr):${sockaddr}u64(dstaddr):${sockaddr}](pcap_addr)")
-    public interface pcap_addr extends Struct<pcap_addr> {
+    interface pcap_addr extends Struct<pcap_addr> {
 
         @NativeGetter("next")
         Pointer<pcap_addr> next$get();

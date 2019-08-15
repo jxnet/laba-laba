@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * -8
+ * -7
  *
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class PermissionDeniedException extends Exception {
+public class NotRfmonException extends Exception {
 
-    public PermissionDeniedException(String message) {
+    public NotRfmonException(String message) {
         super(message);
     }
 

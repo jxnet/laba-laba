@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * -9
+ * -5
  *
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class InterfaceNotUpException extends Exception {
+public class NoSuchDeviceException extends Exception {
 
-    public InterfaceNotUpException(String message) {
+    public NoSuchDeviceException(String message) {
         super(message);
     }
 

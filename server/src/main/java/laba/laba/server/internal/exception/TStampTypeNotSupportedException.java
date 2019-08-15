@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package laba.laba.server.exception;
+package laba.laba.server.internal.exception;
 
 /**
- * -10
+ * 3
  *
  * @author <a href="mailto:contact@ardikars.com">Ardika Rommy Sanjaya</a>
  * @since 1.0.0
  */
-public class CanSetTStampTypeException extends Exception {
+public class TStampTypeNotSupportedException extends RuntimeException {
 
-    public CanSetTStampTypeException(String message) {
+    public TStampTypeNotSupportedException(String message) {
         super(message);
     }
 
