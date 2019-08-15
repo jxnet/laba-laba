@@ -46,6 +46,14 @@ public class ServerConfig {
         return topic;
     }
 
+    public String getKafkaHost() {
+        return kafkaBootstrapServer.split(":")[0];
+    }
+
+    public String getKafkaPort() {
+        return kafkaBootstrapServer.split(":")[1];
+    }
+
     public static ServerConfig getInstance() {
         return INSTANCE;
     }

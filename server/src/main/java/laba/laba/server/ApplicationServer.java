@@ -28,6 +28,7 @@ public class ApplicationServer {
         final Producer producer = producer();
         final PcapInterface pcapInterface = PcapInterface.lookup();
         final Pcap pcap = pcapInterface.openLive();
+        pcap.setFilter("!(tcp port " + ServerConfig.getInstance().getKafkaPort() + ")", true);
         pcap.loop(10, (PcapHandler) (user, header, packet) -> {
             final String key = UUID.randomUUID().toString();
             final PacketWrapper wrapper = new PacketWrapper(header, packet);
